@@ -1,0 +1,157 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Nunito Sans', sans-serif !important;
+  line-height:1.5;
+  font-weight: 300 !important;
+  
+}
+body::before {
+  display:block;
+  content: '';
+}
+.if{
+  font-size: 15px;
+  color: #06D665;
+}
+.underline ul li .links::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #06D665;
+  display: block;
+  margin: auto;
+  
+}
+.underline ul li :hover::after{
+  width:100%;
+}
+a:hover{
+  color: none;
+}
+.underline ul li .links{
+    color: #093A51;
+    font-size: .99rem;
+  }
+  .seamfix{
+    max-width: 155px;
+    border-style: none;
+    box-sizing: border-box;
+  }  
+  .cus_dropdown {
+    position: relative;
+    display: inline-block;
+    bottom: 17;
+  }
+  
+  .cus_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  .cus_dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    
+  }
+  .cus_dropdown:hover .cus_dropdown-content {display: inline-block;}
+
+  @media (max-width:767px){
+    .cus_dropdown:hover .cus_dropdown-content {display: none;}
+  }
+  #cus_strong{
+    font-size: 32px;
+   color: #093A51;
+   font-weight: 515.3;
+   text-transform: capitalize;
+  }
+  .colr{
+    color: #093A51;
+  }
+  #text-color{
+    color: #093a51
+    font-weight: lighter;
+  }
+  .fixed{
+    position: fixed;
+  }
+  #industry-select{
+    background-color: #FFFFFF;
+    color: #093A51;
+    padding: 12px;
+    width: 250px;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0px 9px 20px #d8d8d8;
+    outline:none;
+     
+  }
+  .position-relative{
+    position: relative;
+  }
+.ind-button{
+  background: #06D665;
+  height: 47px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+}
+.cus-margin{
+  margin: 0 -15px;
+  padding: 111px 63.5px;
+}
+.img{
+  width: 410px;
+  height:274.47px;
+}
+
+@media (max-width:767px){
+  .goal-img{
+    width: 410px;
+    height: 240px;
+  }
+.accor-color{
+  color: #093A51 !important; 
+}
+@media(max-width: 767px){
+    .entrust{
+      max-width: 90%;
+      height: auto;
+    }
+    p{
+      font-size: 10px;
+    }
+    .p-class{
+      width: 90%;
+    }
+    .col_class{
+      width: 90%;
+    }
+    .keen-class{
+      width: 80%;
+    }
+    .accor-class{
+      width: 80%;
+      top: -10;
+
+    }
+    .flatform-class{
+      width: 75%;
+      
+    }
+    .flatform-strong{
+      font-size: 1.25rem;
+    }
+}
+#cus{
+  background-color: #06d665;
+  color: #ffffff;
+}

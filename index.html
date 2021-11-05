@@ -3,18 +3,380 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link  href="./css/bootstrap.css" rel="stylesheet" />
-      <link rel="stylesheet" href="./css/bootstrap-icons.css"/>
-
-    <title>Bioler plate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/bootstrap.css"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap-icons.css"> -->
+    <title>SeamFix</title>
+    <style>
+      @media (max-width: 768px) {
+          a{
+            color: white;
+          }
+        }
+    </style>
+    
   </head>
   <body>
 
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light text-light fw-light py-3 mb-2" style="background: #093A51; font-size: 80%">
+      <div class="container">
+        <div class="row">
+        <div class="d-flex align-items-center justify-content-between col">
+          <div class="me-5">
+            <i class="bi bi-telephone-fill me-1 if"></i>UK: +44 7756 238056, Lagos: +234-1-342-9192
+          </div>
+          <div><i class="bi bi-envelope-fill me-2 if"></i><span class="small">info@seamfix.com </span></div>
+        </div>
+        
+        <div></div>
+      </div>
+      </div>
+    </nav>
+
+    <!-- semafix-logo -->
+  
+
+   <section class="navbar navbar-light navbar-expand-lg fw-light">
+    <div class="container">
+      <a href="#" class="navbar-brand"> 
+        <img src="seamfix-logo-dark.svg"  alt="" class="seamfix">
+      </a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body underline">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item me-4">
+              <a href="" class="nav-link links" style="color:#093A51;font-size:.99rem;">Products</a>
+            </li>
+            <li class="nav-item me-4">
+              <a href="" class="nav-link links" style="color:#093A51;font-size:.99rem;">Services</a>
+            </li>
+            <li class="nav-item dropdown me-4 d-md-none d-block">
+              <a class="nav-link dropdown-lg-toggle links" href="#" id="offcanvasNavbarDropdown" 
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#093A51;  font-size:.99rem;">
+             
+              Industry
+              </a>
+              <ul class="dropdown-menu d-lg-none" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Telecoms</a></li>
+                <li><a class="dropdown-item" href="#">Financial Institutions</a></li>
+                
+                <li><a class="dropdown-item" href="#">FMCGs</a></li>
+                <li><a class="dropdown-item" href="#">Government</a></li>
+                <li><a class="dropdown-item" href="#">Security</a></li>
+                <li><a class="dropdown-item" href="#">Education</a></li>
+              </ul>
+            
+            </li>
+            <li class="nav-item dropdown me-4">
+              <div class="cus_dropdown">
+                <a class="nav-link dropdown-lg-toggle links" href="#" id="offcanvasNavbarDropdown" 
+                role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#093A51;  font-size:.99rem; Bottom: 10">
+                  Industry
+                </a>
+                <div class="cus_dropdown-content">
+                  <a class="dropdown-item" href="#">Telecoms</a>
+                  <a class="dropdown-item" href="#">Financial Institutions</a>
+                  
+                  <a class="dropdown-item" href="#">FMCGs</a>
+                  <a class="dropdown-item" href="#">Government</a>
+                  <a class="dropdown-item" href="#">Security</a>
+                  <a class="dropdown-item" href="#">Education</a>
+                </div>
+              </div>
+            </li>
 
 
+          <!-- hamburger dropdown for company  -->
+          <li class="nav-item dropdown me-4">
+            <a class="nav-link dropdown-lg-toggle links" href="#" id="offcanvasNavbarDropdown" 
+            role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#093A51;  font-size:.99rem;">
+            <div class="cus_dropdown">
+              Company
+              <div class="cus_dropdown-content">
+                  <a href="#" class="dropdown-item">About Us</a>
+                  <a href="#" class="dropdown-item">CSR</a>
+                  <a href="#" class="dropdown-item">Career</a>
+                  <a href="#" class="dropdown-item">Our History</a>
+                  <a href="#" class="dropdown-item">Our Intellectual Property</a>
+                  <a href="#" class="dropdown-item">Partnerships</a>
+              </div>
+            </div>  
+    
+            </a>
+            <ul class="dropdown-menu d-lg-none" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Our History</a></li>
+              
+              <li><a class="dropdown-item" href="#">Partnerships</a></li>
+              <li><a class="dropdown-item" href="#">Career</a></li>
+              <li><a class="dropdown-item" href="#">CSR</a></li>
+              <li><a class="dropdown-item" href="#">Our Intellectual Property</a></li>
+            </ul>
+        </li>
+            <li class="nav-item">
+              <a href="" class="nav-link links" style="color:#093A51;  font-size:.99rem;">Our Voice</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- organisation section -->
+<section class="py-5">
+  <div class="container">
+      <div class="row">
+        <div class="col-md">
+            <h3>
+            <strong id="cus_strong" class="mb-0 ">
+              every organisation should deliver ordinary services in extraordinary Ways!
+            </strong>
+          </h3>
+            <p class="py-4 mb-0 mt-0 " style="color: #093A51; ">
+              We innovate; We transform; We empower YOU with the right<br />
+              technologies to meet YOUR customer’s needs.
+            </p>
+            <div class="row align-items-center">
+            <div class="col">
+              <select name="" id="industry-select">
+                <option value="Industry">Choose Your Industry</option>
+                <option value="Telecommunications">Telecommunications</option>
+                <option value="Financial">Financial Institutions</option>
+                <option value="FMCGs">FMCGs</option>
+                <option value="Security">Security</option>
+                <option value="Government">Government</option>
+                <option value="Tertiary">Tertiary Institutions</option>
+              </select>
+            </div>
+            <div class="col">
+              <button class='text-light ind-button'>
+                <i class="bi bi-arrow-right-short p-2 fs-3 fw-5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+          <div class="col-md">
+            <img src="hero-section-11-1536x1448.png" class="img-fluid" alt="">
+          </div>
+      </div>
+  </div>
+</section>
 
+<!-- Goal section -->
 
+<section style="padding: 250px 0;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <strong id="cus_strong">our goal</strong>
+        <p style="color:#093A51">
+          To be the technology partner of choice for thousands of<br /> 
+          global organizations on their journey of Digital <br />
+          Transformation for business growth and customer<br />
+           satisfaction, with a focus on:
+        </p>
+        <div class="mt-4">
+          <img src="preview-sfx.jpeg" class="img" alt="">
+        </div>
+      </div>
+     
+      <div class="col-md">
+        <img src="our-goal-bg1.svg" class="img-fluid goal-img" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- platform -->
+<section style="padding: 100px 0;">
+  <div class="container ">
+    <div class="text-center fw-bolder flatform-class">
+      <strong id="cus_strong" class="fs-3 flatform-strong" style="padding: 200px 0">
+        One Platform, Multiple Solutions To Business<br /> Digitalization Challenges
+      </strong>
+    </div>
+      <div class="row">
+        <div class="col-md" style="margin-top: 100px;">
+          <img src="Onboard-with-compliance.svg"  class="img-fluid d-none d-md-block" alt="">
+        </div>
+        <div class="col-md accor-class" style="margin-top: 100px;">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed"  style="color: #093A51; font-size: 1.25rem;"type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Onboard With Compliance
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">We provide solutions that strike the balance between meeting regulatory requirements and creating a seamless 
+                  customer-centric onboarding experience, so that customers are activated almost immediately in a risk free environment.</div>
+              </div>
+            </div>
+           
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" style="color: #093A51;  font-size: 1.25rem;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Gather Insights For Growth
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  We believe that decisions should be data-driven not based on presumptions and that is why we build technologies that support digital data collection and predictive analytics to make 
+                  insights readily available for businesses to make informed decisions.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" style="color: #093A51; font-size: 1.25rem;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Build Trust With Verified Identites
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  We want every business to operate with transparency and the peace of mind that their customers are exactly who they say they are; and so we power solutions that verify identities and curb 
+                  fraudulent activities associated with identity theft thus eliminating corruption.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed"  style="color: #093A51; font-size: 1.25rem;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Transform Your Tertiary Institution
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  We digitally transform the way tertiary institutions store academic records; simplify the way alumni request 
+                  and obtain their transcripts; and make it possible for receiving organizations to clear up doubts about any academic records.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed"  style="color: #093A51; font-size: 1.25rem;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Automate Communication Processes
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  We enable telecommunications operators and Internet Service Providers to meet KYC regulatory compliance with ease, automate airtime recharge 
+                  and data top-up, and offer subscribers the future of customer service and convenience.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSeven">
+                <button class="accordion-button collapsed"  style="color: #093A51; font-size: 1.25rem;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                 Become A Digital Business
+                </button>
+              </h2>
+              <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">We offer technologies that automate existing manual processes between a business and its customers so that everyone 
+                  can have a better quality of life, and businesses are guaranteed continuity</div>
+              </div>
+            </div>
+            <div class="accordion-item ">
+              <h2 class="accordion-header" id="flush-headingEight">
+                <button class="accordion-button collapsed fw-light" style="color: #093A51; font-size: 1.25rem; " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                  Expand Beyound Boundaries
+                </button>
+              </h2>
+              <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  We empower businesses to expand their customer base and boost their revenue streams 
+                  through a viable network of agents (equipped only with their smartphones), and monitor insight</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+</section>
+
+<!-- Growth and Empowerment -->
+<section>
+    <div style="background:#093A51" class="keen-class">
+     
+            <div class="container ">
+              <h3 class="text-light pb-4" style="padding-top: 180px;">We are keen to growth and <br /> Development</h3>
+              <p class="text-light">Everything we do starts and finishes with our dedication to see <br />
+                businesses thrive in any weather and people achieve extraordinary<br /> success.</p>
+             <h6 style="padding-bottom: 200px;">
+               <strong class="text-light">
+                  Let's Begin With You.
+               </strong>
+             </h6> 
+            </div>   
+        </div>
+    
+</section>
+
+<!-- Business digital section -->
+<section style="padding-top: 180px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md" style="padding-right: 100px;">
+          <img src="why-entrustx-1488x1536.png"  style="width: 700px; height: auto;" class="entrust"
+          alt="entrust">
+        </div>
+        
+        <div class="col-md mt-3 mt-md-1 col_class" style="color: #093A51;">
+          <h3>
+            <strong>
+              Why Entrust Your<br /> Business’s Digital<br /> Future To Our Hands?
+            </strong>
+          </h3>
+          <div class="p-class">
+            <p class="mt-4 tw-light">
+              For over a decade, Seamfix has been at the forefront of digital transformation 
+              because we believe that the world would be a far better place if appropriate 
+              technology was adopted as a way of life. We take a consistent approach to 
+              creating and delivering innovative technology solutions that empower businesses 
+              to meet their customer’s needs and deliver satisfaction with high-quality service.
+            </p>
+            <p class="tw-light">
+              Our efforts in the tech ecosystem have earned us a crowd of awards and recognitions including;
+            </p>
+        </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Partner section -->
+
+<section class="colr" style="margin-top: 100px;">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3 style="margin-top: 100px;">
+          <strong  >Partner Program </strong>
+        </h3>
+        <p class="mt-4">
+          Our partner program is the foundation of a strategic, 
+          growth-driven relationship between you, your clients, and us.
+        </p>
+        <p>
+          Contact us today and let’s thrive together.
+        </p>
+        <button id="cus-btn">Learn more..</button> 
+      </div>
+      <div class="col">
+        <img src="partner-program.png" class='img-fluid' alt="">
+      </div>
+    </div>
+  </div>
+</section>
     <script src="./js/bootstrap.js"></script>
 
   </body>
