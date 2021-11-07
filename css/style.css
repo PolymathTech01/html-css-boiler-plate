@@ -92,18 +92,26 @@ a:hover{
     font-size: 15px;
     box-shadow: 0px 9px 20px #d8d8d8;
     outline:none;
-     
+    
   }
   .position-relative{
     position: relative;
   }
-.ind-button{
-  background: #06D665;
-  height: 47px;
-  border-radius: 5px;
-  color: #fff;
-  border: none;
-}
+  .ind-button{
+    background: #06D665;
+    height: 47px;
+    border-radius: 5px;
+    color: #fff;
+    border: none; 
+  }
+  #learn{
+    background: #06D665;
+   padding: 11px 16px;
+    border-radius: 2em;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+  }
 .cus-margin{
   margin: 0 -15px;
   padding: 111px 63.5px;
@@ -121,9 +129,13 @@ a:hover{
 .accor-color{
   color: #093A51 !important; 
 }
-@media(max-width: 767px){
+@media(max-width: 986px){
+  body{
+    max-width: 100%;
+    height: auto;
+  }
     .entrust{
-      max-width: 90%;
+      max-width: 10s0%;
       height: auto;
     }
     p{
@@ -133,13 +145,13 @@ a:hover{
       width: 90%;
     }
     .col_class{
-      width: 90%;
+      width: 100%;
     }
     .keen-class{
-      width: 80%;
+      width: 100%;
     }
     .accor-class{
-      width: 80%;
+      width: 100%;
       top: -10;
 
     }
@@ -150,8 +162,14 @@ a:hover{
     .flatform-strong{
       font-size: 1.25rem;
     }
+    .partner-marg{
+      margin-top: -90px;
+    }
 }
 #cus{
   background-color: #06d665;
   color: #ffffff;
+}
+.fs-w{
+  font-weight: 500 !important;
 }

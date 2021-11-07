@@ -10,13 +10,17 @@
         <!-- <link rel="stylesheet" href="css/bootstrap-icons.css"> -->
     <title>SeamFix</title>
     <style>
-      @media (max-width: 768px) {
+      @media (max-width: 986px) {
           a{
             color: white;
           }
           .voice{
             margin-top: -20px;
           }
+          .links_col{
+            color: #f8f9fa;
+          }
+        
         }
     </style>
     
@@ -51,28 +55,61 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     
-      <div class="offcanvas offcanvas-end bg-md-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end black" tabindex="1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close text-reset btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body underline">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item me-4">
-              <a href="" class="nav-link links" style="color:#093A51;font-size:.99rem;">Products</a>
+            <li class="nav-item dropdown me-4">
+              <div class="cus_dropdown">
+                <a class="nav-link dropdown-lg-toggle links d-lg-block d-none" href="#" id="offcanvasNavbarDropdown" 
+                role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#093A51;  
+                margin-top: 18px; font-size:.99rem;">
+                  Products
+                </a>
+                <div class="cus_dropdown-content bg-light">
+                  <a class="dropdown-item" href="#">BioRegistra</a>
+                  <a class="dropdown-item" href="#">BioSmart</a>
+                  
+                  <a class="dropdown-item" href="#">Verified</a>
+                  <a class="dropdown-item" href="#">Billable</a>
+                  <a class="dropdown-item" href="#">SmartMDM</a>
+                  <a class="dropdown-item" href="#">iTranscript</a>
+                  <a class="dropdown-item" href="#">Auto Topup</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown me-4 d-lg-none d-block">
+              <a class="nav-link dropdown-lg-toggle links" href="#" id="offcanvasNavbarDropdown" 
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#093A51; margin-top: -20px; font-size:.99rem;">
+              Products
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">BioRegistra</a></li>
+                <li><a class="dropdown-item" href="#">BioSmart</a></li>
+                
+                <li><a class="dropdown-item" href="#">Verified</a></li>
+                <li><a class="dropdown-item" href="#">Billable</a></li>
+                <li><a class="dropdown-item" href="#">SmartMDM</a></li>
+                <li><a class="dropdown-item" href="#">iTranscript</a></li>
+                <li><a class="dropdown-item" href="#">Auto Topup</a></li>
+              </ul>
+            
             </li>
             <li class="nav-item me-4">
               <a href="" class="nav-link links" style="color:#093A51;font-size:.99rem;">Services</a>
             </li>
             <li class="nav-item dropdown me-4">
               <div class="cus_dropdown">
-                <a class="nav-link dropdown-lg-toggle links d-md-block d-none" href="#" id="offcanvasNavbarDropdown" 
+                <a class="nav-link dropdown-lg-toggle links d-lg-block d-none" href="#" id="offcanvasNavbarDropdown" 
                 role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#093A51;  
                 margin-top: 18px; font-size:.99rem;">
                   Industry
                 </a>
-                <div class="cus_dropdown-content">
-                  <a class="dropdown-item" href="#">Telecoms</a>
+                <div class="cus_dropdown-content bg-light">
+                  <a class="dropdown-item" href="#">Telecom</a>
                   <a class="dropdown-item" href="#">Financial Institutions</a>
                   
                   <a class="dropdown-item" href="#">FMCGs</a>
@@ -82,12 +119,12 @@
                 </div>
               </div>
             </li>
-            <li class="nav-item dropdown me-4 d-md-none d-block">
+            <li class="nav-item dropdown me-4 d-lg-none d-block">
               <a class="nav-link dropdown-lg-toggle links" href="#" id="offcanvasNavbarDropdown" 
               role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#093A51; margin-top: -20px; font-size:.99rem;">
               Industry
               </a>
-              <ul class="dropdown-menu d-lg-none" aria-labelledby="offcanvasNavbarDropdown">
+              <ul class="dropdown-menu " aria-labelledby="offcanvasNavbarDropdown">
                 <li><a class="dropdown-item" href="#">Telecoms</a></li>
                 <li><a class="dropdown-item" href="#">Financial Institutions</a></li>
                 
@@ -102,13 +139,13 @@
 
 
           <!-- hamburger dropdown for company  -->
-          <li class="nav-item dropdown me-4 d-md-none d-block">
+          <li class="nav-item dropdown me-4 d-lg-none d-block">
             <a class="nav-link dropdown-lg-toggle links" href="#" id="offcanvasNavbarDropdown" 
             role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#093A51;  font-size:.99rem;">
             Company
             </a>
             <ul class="dropdown-menu d-lg-none" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item links_col" href="#">About Us</a></li>
               <li><a class="dropdown-item" href="#">CSR</a></li>
               
               <li><a class="dropdown-item" href="#">Career</a></li>
@@ -119,12 +156,12 @@
           
           </li>
           <li class="nav-item dropdown me-4">
-            <a class="nav-link dropdown-lg-toggle links d-md-block d-none" href="#" id="offcanvasNavbarDropdown" 
+            <a class="nav-link dropdown-lg-toggle links d-lg-block d-none" href="#" id="offcanvasNavbarDropdown" 
             role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#093A51;  font-size:.99rem;">
             <div class="cus_dropdown">
               Company
-              <div class="cus_dropdown-content">
-                  <a href="#" class="dropdown-item" style="margin-top: -25px">About Us</a>
+              <div class="cus_dropdown-content bg-light">
+                  <a href="#" class="dropdown-item f" style="margin-top: -25px">About Us</a>
                   <a href="#" class="dropdown-item">CSR</a>
                   <a href="#" class="dropdown-item">Career</a>
                   <a href="#" class="dropdown-item">Our History</a>
@@ -137,7 +174,7 @@
       </li>
       
             <li class="nav-item">
-              <a href="" class="nav-link links voice" style="color:#093A51; font-size:.99rem;">Our Voice</a>
+              <a href="" class="nav-link links voice mt-lg-auto" style="color:#093A51; font-size:.99rem;">Our Voice</a>
             </li>
             
           </ul>
@@ -189,7 +226,7 @@
 
 <!-- Goal section -->
 
-<section style="padding: 250px 0;">
+<section style="padding: 150px 0;">
   <div class="container">
     <div class="row">
       <div class="col-md">
@@ -367,10 +404,10 @@
 
 <!-- Partner section -->
 
-<section class="colr" style="margin-top: 100px;">
+<section class="colr partner-marg" style="margin-top: 100px;">
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-md">
         <h3 style="margin-top: 100px;">
           <strong  >Partner Program </strong>
         </h3>
@@ -381,10 +418,11 @@
         <p>
           Contact us today and let’s thrive together.
         </p>
-        <button id="cus-btn">Learn more..</button> 
+        <!-- <button id="cus-btn">Learn more..</button>  -->
+        <a href="" class="btn " id="learn">Learn more...</a>
       </div>
-      <div class="col">
-        <img src="images/partner-program.png" class='img-fluid' alt="">
+      <div class="col-md">
+        <img src="images/partner-program.png" style="max-width: 100%; height: auto;" alt="">
       </div>
     </div>
   </div>
