@@ -24,6 +24,7 @@ body::before {
   margin: auto;
   
 }
+
 .underline ul li :hover::after{
   width:100%;
 }
@@ -135,14 +136,14 @@ a:hover{
     height: auto;
   }
     .entrust{
-      max-width: 10s0%;
+      max-width: 100%;
       height: auto;
     }
     p{
       font-size: 10px;
     }
     .p-class{
-      width: 90%;
+      max-width: 100%;
     }
     .col_class{
       width: 100%;
@@ -163,7 +164,7 @@ a:hover{
       font-size: 1.25rem;
     }
     .partner-marg{
-      margin-top: -90px;
+      margin-top: 0;
     }
 }
 #cus{
@@ -173,3 +174,8 @@ a:hover{
 .fs-w{
   font-weight: 500 !important;
 }
+#wrapper{
+  display: flex;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
