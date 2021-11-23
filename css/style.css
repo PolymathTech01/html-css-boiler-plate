@@ -1,5 +1,7 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body{
   font-family: 'Nunito Sans', sans-serif !important;
@@ -148,9 +150,7 @@ a:hover{
     .col_class{
       width: 100%;
     }
-    .keen-class{
-      width: 100%;
-    }
+    
     .accor-class{
       width: 100%;
       top: -10;
@@ -179,17 +179,8 @@ a:hover{
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
-/* 
-  <div class="grid-container2">
-            <div class="container2-item1">
-                
-            </div>
-            <div class="container2-item2"></div>
-            <div class="container2-item3"></div>
-            <div class="container2-item4"></div>
-            <div class="container2-item5"></div>
-            <div class="container2-item6"></div>
-            <div class="container2-item7"></div>
-          
-        </div>
-*/
+.empowering{
+  font-weight: 700 !important;
+  padding-top: 200px !important;
+  margin-top: 200px !important;
+}

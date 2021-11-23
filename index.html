@@ -30,9 +30,9 @@
       }
     }
 
-    @media (max-width: 759px) {
+    @media (max-width: 767px) {
       
-      .item4{
+    .item4{
       margin-top: -80px;
     }
     .grid-container{
@@ -47,19 +47,26 @@
       width: 50%;
     }
     .grid-container2{
-      text-align: center;
-      display: grid;
-      grid-template-rows: auto;
-      grid-row-gap: 40px;
+        text-align: center;
+        display: grid;
+        grid-template-rows: auto;
+        grid-row-gap: 40px;
     }
     .container2-item1{
       margin-left: 40px;
     }
+    .keen-class{
+      width: 100vw;
     }
-    
+    .work-btn{
+      margin-top: -100px;
+      /* width: 50%; */
+    }
+    .cus-btn{
+      width: 20%;
       
-
-    
+    }
+    }
 
     .wrapper {
       display: grid;
@@ -72,26 +79,26 @@
     }
 
     .footer-1 {
-      padding: 20em;
-      background-image: url(/images/world.png);
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: relative;
+        padding: 20em;
+        background-image: url(/images/world.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
     }
-    @media screen and (min-width:760px) {
+    @media screen and (min-width:768px) {
       .grid-container{
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      grid-column-gap: 4px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 4px;
     }
     .item1{
-      grid-row-start: 1;
-      grid-row-end: 3;
-      margin: auto;
-      margin-right: 50px;
-      padding: 10px;
-      /* text-align: center; */
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin: auto;
+        margin-right: 50px;
+        padding: 10px;
+        /* text-align: center; */
     }
     .img-biometric{
       height: 10vh; 
@@ -129,10 +136,86 @@
     .container2-item7{
       grid-area: ndpr;
     }
+    .keen-class{
+      width: 100vw;
+    }
+
+    .grid-container3{
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-template-areas: 
+      "seamfix empty Products company subscribe";
+    }
+    .container3-item1{
+      grid-area: seamfix;
+    }
+    .small{
+      font-size: 80% !important;
+    }
+    .text-primary{
+      color: #27b440 !important;
+    }
+    .subscribe-btn{
+      background-color: #27b440;
+    }
+    .container3-empty{
+      grid-area:empty;
+      padding: 100px 150px 100px 10px;
+    }
+    .container3-item2{
+      grid-area: Products;
+    }
+    .container3-item3{
+      grid-area: company;
+    }
+    .container3-item4{
+      grid-area: subscribe;
+    }
+    .work-btn{
+      margin-top: -100px;
+    }
+    }
+    body::before{
+      display: block;
+      content: '';
+      height: 100px;
+    }
+    .halogen{
+      background-image: url(images/section-bg.png);
+    }
+    .world-bg{
+    background: #112340 url("https://seamfix.com/wp-content/uploads/2020/10/world.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
     
     }
+    .input-container{
+      position: relative;
+      /* direction: rtl; */
+
+    }
+    #email-icon{
+      position: absolute;
+      bottom: 15px;
+      left: 200px;
+    }
     
-   
+    ::placeholder{
+      color: #6c757d;
+      
+    }
+    input[type=email]{
+      background-color: transparent;
+      height: 48px;
+      border: 1px solid white;
+      border-radius: 8px;
+      padding-left: 6%;
+      padding-right: 20%;
+      font-size: 12px;
+      color: white;
+      
+    }
     
    
   </style>
@@ -142,7 +225,8 @@
 <body>
 
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light text-light fw-light py-3 mb-2"
+  <section class="fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light text-light fw-light py-3 mb-2  "
     style="background: #093A51; font-size: 80%">
     <div class="container">
       <div class="row">
@@ -161,7 +245,7 @@
   <!-- semafix-logo -->
 
 
-  <section class="navbar navbar-light navbar-expand-lg fw-light">
+  <section class="navbar navbar-light navbar-expand-lg fw-light" style="margin-top: -10px; background: white;">
     <div class="container">
       <a href="#" class="navbar-brand">
         <img src="images/seamfix-logo-dark.svg" alt="" class="seamfix">
@@ -367,6 +451,7 @@
       </div>
     </div>
   </section>
+</section>
 
   <!-- organisation section -->
   <section class="py-5">
@@ -567,14 +652,14 @@
   </section>
 
   <!-- Growth and Empowerment -->
-  <section>
-    <div style="background:#093A51" class="keen-class">
+  <section style="width: 100vw; height:auto;">
+    <div style="background:#093A51">
 
       <div class="container ">
-        <h3 class="text-light pb-4" style="padding-top: 180px;">We are keen to growth and <br /> Development</h3>
+        <h3 class="text-light pb-4" style="padding-top: 80px;">We are keen to growth and <br /> Development</h3>
         <p class="text-light">Everything we do starts and finishes with our dedication to see <br />
           businesses thrive in any weather and people achieve extraordinary<br /> success.</p>
-        <h6 style="padding-bottom: 200px;">
+        <h6 style="padding-bottom: 100px;">
           <strong class="text-light">
             Let's Begin With You.
           </strong>
@@ -614,6 +699,17 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- Halogen -->
+
+  <section class="halogen" style="margin-top: 100px;">
+    <div style="margin-top: 100px;">
+      <p>
+        <q> For over a decade, Seamfix has been at the forefront of digital transformation because we believe that the world would be a far better place if appropriate technology was adopted as a way of life. We take a consistent approach to creating and delivering innovative technology solutions that empower businesses to meet their customer’s needs and deliver satisfaction with high-quality service.</q>
+      </p>
+    </div>
+
   </section>
 
   <!-- Partner section -->
@@ -746,6 +842,206 @@
           </div>
         </div>
   </section>
+
+
+<!-- foooter -->
+<section>
+  <div class='world-bg'>
+  
+        <h2 class="text-center text-light empowering" style="padding: 150px 200px; text-transform: capitalize; line-height: 1.5; font-weight: 900; font-size: 2rem;">
+          Empowering organizations to meet their goals through digital transformation!
+        </h2>
+        <div class='text-center ms-auto work-btn' style="bottom: 10px;">
+      <button class="btn text-light cus-btn"
+      style="background-color: #2acb40; font-size: 14px; padding: 14px 20px 14px 20px; border-radius: 5px;"
+      >Lets work with You!</button>
+    </div>
+    <hr>
+
+    <section>
+      <div class="container py-5 my-1">
+        <div class="row text-light">
+          <div class="col-md-4 small ps-2">
+            <img src="images/logo.png" alt=""><br>
+              <p class=" fw-normal mt-3" style="margin-bottom: 1rem;">
+                 <strong ">Who We Are</strong>
+                 <br>
+                  We are a people and a software development company.
+              </p>
+              <p class="fw-normal">
+                  <strong>What We Do</strong> <br>
+                  Most organizations want to easily acquire and service a lot of customers digitally but struggle with complex processes. We help by seamlessly automating these processes so that they can be more productive, make customers happy and boost revenues.
+              </p>
+          </div>
+         
+          <div class="col-md-8 my-md-0 my-4 text-light">
+
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-3 col-6">
+                    <p class="text-primary mb-3">
+                      Products
+                    </p>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="menu-item">
+                        <a href="#" class="nav-link text-light">BioRegistra</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="nav-link text-light">Biosmart</a>
+                      </li>
+        
+                      <li class="menu-item">
+                        <a href="#" class="nav-link text-light">Verified</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="nav-link text-light">Billable</a>
+                      </li>
+        
+                      <li class="menu-item">
+                        <a href="#" class="nav-link text-light">SmartMDM</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#" class="nav-link text-light">iTranscript</a>
+                      </li>
+        
+                      <li class="menu-item">
+                        <a href="#" class="nav-link text-light">Autotopup</a>
+                      </li>
+        
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                  <p class="text-primary mb-3">
+                    Company
+                  </p>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="menu-item">
+                      <a href="#" class="nav-link text-light">About Us</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="nav-link text-light">Our History</a>
+                    </li>
+      
+                    <li class="menu-item">
+                      <a href="#" class="nav-link text-light">Leadership Team</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="nav-link text-light">Careers</a>
+                    </li>
+      
+                    <li class="menu-item">
+                      <a href="#" class="nav-link text-light">Partners</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="nav-link text-light">Press Kit</a>
+                    </li>
+      
+                    <li class="menu-item">
+                      <a href="#" class="nav-link text-light">Blog</a>
+                    </li>
+      
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <p class="text-primary mb-3">
+                    Subscribe
+                  </p>
+                  <p class="small" style="color: #6c757d ">
+                    Get updates on our products, services and the industry
+                  </p>
+                    <div class="mt-md-5">
+                      						
+						<!-- Begin MailChimp Signup Form -->
+							<div>
+                <form style="padding-top:8px">
+                <div>
+                <label for="EMAIL" class="text-md-left text-center footer-head mt-0 pt-0 text-white">Email</label>
+                  
+                <div class="input-container mt-2">
+                <input type="email" value="" name="EMAIL" class="form-control" placeholder="your email here"">
+                  
+                       <img alt="icon" src="https://seamfix2020.wpengine.com/wp-content/uploads/2020/10/email-icon.svg" id="email-icon">
+                  </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" tabindex="-1" value="">
+                </div>
+                <div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn mt-4 px-4 text-light subscribe-btn">
+                </div>
+                </div>
+                </form>
+                </div>
+                <!--End mc_embed_signup-->
+              
+              
+              <!--<p class="mb-1 pb-0 text-white">Email</p>
+                  <div class="position-relative">
+                      <input class="form-control footer-input" placeholder="your email here" />
+  
+                      <img class="footer-email__icon" alt="email icon" src="https://seamfix.com/wp-content/uploads/2020/10/email-icon.svg" />
+                  </div>
+              
+              <button class="btn btn-primary mt-4 px-4">
+                Subscribe
+              </button>  -->
+            </div>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+            <br />
+            <br />
+            <br />
+         
+          <div class="row">
+            <div class="col-md-12"></div>
+              <div class="col-md-4">
+                  <p class="text-light small">
+                    <strong>Contact</strong> <br />
+                    Email - info@seamfix.com
+                  </p>
+                <div></div>
+              </div>
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-6 col-6">
+                    <p class="small text-light fw-normal">
+                      <strong>UK Office</strong><br />
+                    Wharfedale Road, Building 220, Wokingham, Berkshire, RG41 5TP, United Kingdom
+                    </p>
+                    <br />
+                    <p class="small text-light fw-normal">
+                      <strong>Phone</strong><br />
+                    +44 7756 238056
+                    </p>
+                  </div>
+                  <div class="col-md-4 col-6">
+                    <p class="small text-light fw-normal">
+                      <strong>Lagos Office</strong><br />
+                      1st Floor, Leasing House,C & I Leasing Drive, Off Bisola Durosinmi Etti Drive, Off Admiralty Way,
+                      <br />
+                      Lekki Phase 1, Lagos, Nigeria.
+                    </p>
+                    <br />
+                    <p class="small text-light fw-normal">
+                      <strong>Phone</strong><br />
+                      +234-1-342-9192
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  
+    
+    </section>
+  </div>
+</section>
+
+
+
+
   <script src="./js/bootstrap.js"></script>
 </body>
 </html>
